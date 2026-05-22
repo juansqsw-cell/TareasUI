@@ -1,35 +1,37 @@
 .tarea-card {
-  background: #fff;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 1rem 1.25rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .tarea-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .tarea-card.completada {
-  border-left: 4px solid #27ae60;
-  opacity: 0.85;
+  background: linear-gradient(135deg, #d4efdf 0%, #a9dfbf 100%);
+  border-left: 5px solid #27ae60;
 }
 
 .tarea-titulo {
   margin: 0 0 0.4rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #1a1a2e;
+  font-weight: 700;
 }
 
 .tarea-descripcion {
   margin: 0 0 0.6rem;
-  font-size: 0.9rem;
-  color: #555;
+  font-size: 0.95rem;
+  color: #444;
 }
 
 .tarea-estado {
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2c3e50;
 }
